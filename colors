@@ -1,0 +1,11 @@
+#!/bin/bash
+
+printf "\n\n"
+for i in $(seq 1 10); do
+  echo -en "         "
+  for BG in 40m 41m 42m 43m 44m 45m 46m 47m;
+    do echo -en "$EINS \033[$FG\033[$BG     $T     \033[0m";
+  done
+  printf "\n"
+done
+printf "\n"
